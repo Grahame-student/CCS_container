@@ -5,37 +5,11 @@ TI CCS Docker provides [Texas Instruments Code Composer Studio](http://www.ti.co
 This container provides:
 
 * Ubuntu 18.04 LTS
-* TI Code Composer Studio 9.3 with MSP432 and CC2xxx build tools
-* MSP432Pxxx SDK v2.40.00.10
-* MSP432Pxxx SDK v3.40.01.02
-* MSP432Exxx SDK v2.10.00.17
-* MSP432Exxx SDK v3.10.00.11
+* TI Code Composer Studio 11.0.0 with MSP430 build tools
 
 ## Changelog
 
-### v1.3 (2020-11-06)
-
-* TI CCS 9.3.0.00012 with MSP432 and CC2xxx build tools
-* TI SimpleLink MSP432P4 SDK v2.40.00.10
-* TI SimpleLink MSP432P4 SDK v3.40.01.02
-* TI SimpleLink MSP432E4 SDK v2.10.00.17
-* TI SimpleLink MSP432E4 SDK v3.10.00.11
-
-### v1.2 (2020-03-26)
-
-* TI CCS 9.2.0.00013 with MSP432 and CC2xxx build tools
-* TI SimpleLink MSP432P4 SDK v2.40.00.10
-* TI SimpleLink MSP432E4 SDK v2.10.00.17
-* TI SimpleLink MSP432E4 SDK v3.10.00.11
-
-
-### v1.1 (2020-01-16)
-
-* TI CCS 9.2.0.00013 with MSP432 and CC2xxx build tools
-* TI SimpleLink MSP432P4 SDK v2.40.00.10
-* TI SimpleLink MSP432E4 SDK v2.10.00.17
-
-### v1.0 (2020-01-15)
-
-* TI CCS 9.2.0.00013 with MSP432 and CC2xxx build tools
-* TI SimpleLink MSP432P4 SDK v2.40.00.10
+### v1.0 (2021/12/14)
+Minimal linux container
+CCS 11.0.0 installed
+MSP430 build tools installed
