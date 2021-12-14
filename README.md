@@ -11,5 +11,7 @@ This container provides:
 
 ### v1.0 (2021/12/14)
 Minimal linux container
+
 CCS 11.0.0 installed
+
 MSP430 build tools installed
