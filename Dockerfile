@@ -2,8 +2,7 @@ FROM ubuntu:18.04
 
 ENV INSTALLER_URL=https://software-dl.ti.com/ccs/esd/CCSv11/CCS_11_0_0/exports/CCS11.0.0.00012_web_linux-x64.tar.gz
 ENV INSTALLER_TAR=CCS11.0.0.00012_web_linux-x64.tar.gz
-ENV INSTALLER_PATH=CCS11.0.0.00012_linux-x64/ccs_setup_11.0.0.00012.bin
-ENV INSTALLER_BIN = ccs_setup_11.0.0.00012.bin
+ENV INSTALLER_PATH=ccs_setup_11.0.0.00012.run
 
 
 RUN ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime
