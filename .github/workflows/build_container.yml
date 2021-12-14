@@ -9,17 +9,17 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: 'Login to docker with GHCR'
+      - name: Get Release Tag
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: 'Login to docker with GHCR'
         uses: docker/login-action@v1 
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      -
-        name: Build and push
+      - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/ccs_container:latest
+          tags: ghcr.io/${{ github.repository_owner }}/ccs_container:${{ env.RELEASE_VERSION }}
